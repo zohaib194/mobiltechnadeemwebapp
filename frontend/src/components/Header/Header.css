@@ -1,10 +1,9 @@
 .navbar {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	background-image: linear-gradient(to right, #eff0f1, #2196f3, #eff0f1);
+	/*background-image: linear-gradient(to right, #eff0f1, #2dace3, #eff0f1);*/
 	padding: 10px;
-	font-size: 20px;
-	height: 5em;
+	height: 3em;
 }
 
 .navbarRight,
@@ -27,11 +26,17 @@
 	padding: 8px 12px;
 	margin: 0 8px;
 	text-decoration: none;
+	color: black;
 }
 
 #navbarRightElement {
 	float: right;
+}
+
+#navbarBottomElement {
+	margin: 40px auto;
 	text-decoration: none;
+	color: black;
 }
 
 .fa {
@@ -63,20 +68,23 @@
 
 #menu {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	width: 100%;
-	height: 10em;
-	background: #22771f;
+	grid-template-columns: repeat(4, 1fr);
+	width: 50%;
+	height: 13em;
+	background-image: linear-gradient(to right, #eff0f1, #2dace3, #2dace3, #eff0f1);
+	margin: 15px auto;
 }
 
-#navbarBottomElement {
-	margin: 16px auto;
+.unordList {
+	list-style-type: none;
+	padding: 0;
 }
+
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes searchMovement {
 	0% {
-		left: 80px;
+		left: 50px;
 		top: 0px;
 	}
 	100% {
@@ -88,7 +96,7 @@
 /* Standard syntax */
 @keyframes searchMovement {
 	0% {
-		left: 80px;
+		left: 50px;
 		top: 0px;
 	}
 	100% {

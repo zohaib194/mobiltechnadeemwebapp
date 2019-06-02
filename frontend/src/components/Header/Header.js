@@ -79,26 +79,96 @@ export default class Header extends React.Component {
 	getMenuItems() {
 		return (
 			<div id="menu">
-				<div id="navbarBottomElement">
-					<a className="navbarBrands" href="/brands">
-						<b>Merker</b>
+				<div id="navbarBottomElement" className="navbarRepair">
+					<a id="navbarBottomElement" href="/repair">
+						<b>Reperasjon</b>
 					</a>
 
-					<div id="brands">
-						<ul>
-							<li> Apple </li>
-							<li> Samsung </li>
-							<li> Huwaei </li>
+					<div id="repair">
+						<ul className="unordList">
+							<li>
+								<a id="navbarBottomElement" href="/repair/apple"> Apple </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/repair/samsung"> Samsung </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/repair/huwaei"> Huwaei </a>
+							</li>
 						</ul>
 					</div>
 				</div>
 
-				<a id="navbarBottomElement" className="navbarProducts" href="/products">
-					<b>Produkter</b>
-				</a>
-				<a id="navbarBottomElement" className="navbarContact" href="/contact">
-					<b>Contact</b>
-				</a>
+				<div id="navbarBottomElement" className="navbarSpareParts">
+					<a id="navbarBottomElement" className="navbarSpareParts" href="/spareparts">
+						<b>Reservedeler</b>
+					</a>
+
+					<div id="spareParts">
+						<ul className="unordList">
+							<li>
+								<a id="navbarBottomElement" href="/spareparts/lcd"> LCD skjerm </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/spareparts/backglass"> Bakglass </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/spareparts/cameras"> Front/Back kamera </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/spareparts/battery"> Batteri </a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div id="navbarBottomElement" className="navbarAccessories">
+					<a id="navbarBottomElement" className="navbarAccessories" href="/accessories">
+						<b>Tilbehør</b>
+					</a>
+
+					<div id="accessories">
+						<ul className="unordList">
+							<li>
+								<a id="navbarBottomElement" href="/accessories/screenprotector"> Skjermbeskytter</a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/accessories/charger"> Lader </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/accessories/cabels"> USB kabler </a>
+							</li>
+							<li>
+								<a id="navbarBottomElement" href="/accessories/earbuds"> Ørepropper </a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+
+				<div id="navbarBottomElement" className="navbarAccessories">
+
+					<a id="navbarBottomElement" className="navbarContact" href="/help">
+						<b>Hjelp</b>
+					</a>
+
+					<ul className="unordList">
+						<li>
+							<a id="navbarBottomElement" href="/help/billing"> Faktura </a>
+						</li>
+						<li>
+							<a id="navbarBottomElement" href="/help/customerservice"> Kundeservice </a>
+						</li>
+						<li>
+							<a id="navbarBottomElement" href="/help/gdpr"> GDPR </a>
+						</li>
+						<li>
+							<a id="navbarBottomElement" href="/help/contact"> Kontakt oss </a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		);
 	}
