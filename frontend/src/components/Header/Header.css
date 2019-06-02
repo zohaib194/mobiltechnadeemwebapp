@@ -75,7 +75,7 @@
 	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
 	animation-name: menuMovement;
 	animation-duration: 2s;
-
+	box-shadow: 5px 5px;
 }
 
 .unordList {
@@ -133,27 +133,56 @@
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-width: 500px) {
+	#navbarSides #menu {
+		display: none;
+	}
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) {
+	a#navbarRightElement.Menu {
+    	margin-left: -5px;
+	}
+
+	input#navbarLeftElement.navbarSearchField {
+		margin-left: -10px;
+	}
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	form.SearchForm, a#navbarLeftElement.Search {
+		display: none;
+	}
+
+	span.navbarMenu, span.navbarProfile{
+		display: none;
+	}
+
+	div#navbarSides.navbarRight {
+		margin-left: -0.4em;
+	}
+
+	#navbarSides #menu{
+		width: 100%;
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+	a#navbarLeftElement.Close {
+    	display: none;
+	}
+}
 
 
 
 /**
  * REF : https://codepen.io/sedran/pen/GYPevV;
  */
-
 :root{
     --bg-color: #d8d8d8;
 }
