@@ -203,12 +203,12 @@ export default class Header extends React.Component {
 						{searchForm}
 					</div>
 					<div id="navbarSides" className="navbarMid">
-						<img
-							src="https://thumbs.dreamstime.com/b/mobile-phone-vector-logo-template-concept-illustration-smartphone-creative-sign-modern-technology-cellphone-symbol-tablet-pc-icon-88017136.jpg"
-							alt="Mobil Tech"
-							height="42"
-							width="42"
-						/>
+
+
+						<p className="home-title">
+							<span><b> Mobil <i className="fa fa-mobile-phone" /> Tech </b></span>
+							<span><b> Nadeem </b> </span>
+						</p>
 					</div>
 					<div id="navbarSides" className="navbarRight">
 						<a
