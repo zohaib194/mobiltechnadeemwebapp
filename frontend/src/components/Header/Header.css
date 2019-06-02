@@ -78,6 +78,18 @@
 	box-shadow: 5px 5px;
 }
 
+.fa.fa-bars.inactive{
+	display: none;
+}
+
+.fa.fa-close.inactive{
+	display: none;
+}
+
+.fa.fa-close.active{
+	display: "inline-block";
+}
+
 .unordList {
 	list-style-type: none;
 	padding: 0;

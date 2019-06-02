@@ -65,11 +65,18 @@ export default class Header extends React.Component {
 	}
 
 	onClickShowMenu() {
+		var menuButton = document.getElementsByClassName("fa fa-bars")[0];
+		var closeButton = document.getElementsByClassName("fa fa-close")[0];
+
 		if (this.state.showMenu) {
+			menuButton.className = "fa fa-bars active";
+			closeButton.className = "fa fa-close inactive";
 			this.setState({
 				showMenu: false
 			});
 		} else {
+			menuButton.className = "fa fa-bars inactive";
+			closeButton.className = "fa fa-close active";
 			this.setState({
 				showMenu: true
 			});
@@ -219,7 +226,8 @@ export default class Header extends React.Component {
 						>
 							<span className="navbarMenu"> Meny </span>
 							<span className="btnMenu">
-								<i className="fa fa-bars" />
+								<i className="fa fa-bars active" />
+								<i className="fa fa-close inactive" />
 							</span>
 						</a>
 
