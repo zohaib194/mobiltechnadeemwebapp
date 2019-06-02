@@ -1,18 +1,15 @@
-body {
-	font-family: Arial;
-}
-
 .navbar {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	background-image: linear-gradient(to right, #eff0f1, #2196F3, #eff0f1);
+	background-image: linear-gradient(to right, #eff0f1, #2196f3, #eff0f1);
 	padding: 10px;
 	font-size: 20px;
 	height: 5em;
 }
 
-.navbarRight, .navbarLeft {
-    display: inline-block;
+.navbarRight,
+.navbarLeft {
+	display: inline-block;
 	justify-self: center;
 	align-self: center;
 }
@@ -24,8 +21,9 @@ body {
 	align-self: center;
 }
 
-#navbarRightElement, #navbarLeftElement{
-    display: inline-block;
+#navbarRightElement,
+#navbarLeftElement {
+	display: inline-block;
 	padding: 8px 12px;
 	margin: 0 8px;
 	text-decoration: none;
@@ -77,12 +75,24 @@ body {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes searchMovement {
-  0%   {left:80px; top:0px;}
-  100% {left:0px; top:0px;}
+	0% {
+		left: 80px;
+		top: 0px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
 }
 
 /* Standard syntax */
 @keyframes searchMovement {
-  0%   {left:80px; top:0px;}
-  100% {left:0px; top:0px;}
+	0% {
+		left: 80px;
+		top: 0px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
 }
