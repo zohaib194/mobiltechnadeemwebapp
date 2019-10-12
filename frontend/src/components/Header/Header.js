@@ -74,21 +74,37 @@ export default class Header extends React.Component {
 			this.setState({
 				showMenu: false
 			});
+
 		} else {
 			menuButton.className = "fa fa-bars inactive";
 			closeButton.className = "fa fa-close active";
 			this.setState({
 				showMenu: true
 			});
+			var elem = document.getElementById('menu');
 		}
 	}
 
 	getMenuItems() {
+		let transitionEffect = 'all 2s ease-in-out';
+		let divHeight;
+
+		if(this.state.showMenu){
+			divHeight = '10em';
+		} else {
+			divHeight = '0em';
+		}
+		const divStyle = {
+		  transition: transitionEffect,
+		  height: divHeight,
+		  overflow: 'hidden',
+		};
 		return (
-			<div id="menu">
-				<div id="navbarBottomElement" className="navbarRepair">
-					<a id="navbarBottomElement" href="/repair">
-						<b>Reperasjon</b>
+
+			<div id="menu" style={divStyle}>
+				<div id="navbarBottomElement">
+					<a className="navbarBrands" href="/brands">
+						<b>Merker</b>
 					</a>
 
 					<div id="repair">
@@ -186,9 +202,9 @@ export default class Header extends React.Component {
 		}
 
 		if (this.state.showMenu) {
-			var menu = this.getMenuItems();
 		}
 
+			var menu = this.getMenuItems();
 		return (
 			<div>
 				<div className="navbar">
@@ -240,7 +256,12 @@ export default class Header extends React.Component {
 					</div>
 				</div>
 				<div id="navbarSides">{menu}</div>
+				<img
+							src="https://s14415.pcdn.co/wp-content/resize/uploads/brandwatch/troll.jpg__w469"
+							alt="Mobil Tech"
+						/>
 			</div>
+
 		);
 	}
 }

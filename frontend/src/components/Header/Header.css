@@ -66,8 +66,6 @@
 
 #navbarSides #menu {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	width: 50%;
 	background: #2dace3;
 	margin: 15px auto;
 	position: relative;
@@ -76,6 +74,12 @@
 	animation-name: menuMovement;
 	animation-duration: 2s;
 	box-shadow: 5px 5px;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	height: 10em;
+	z-index: 99;
+	background: #22771f;
+	position: fixed;
 }
 
 .fa.fa-bars.inactive{
