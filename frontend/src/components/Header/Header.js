@@ -8,7 +8,7 @@ export default class Header extends React.Component {
 		this.onClickShowSearchField = this.onClickShowSearchField.bind(this);
 		this.getSearchFieldForm = this.getSearchFieldForm.bind(this);
 		this.onClickShowMenu = this.onClickShowMenu.bind(this);
-		this.getMenuItems = this.getMenuItems.bind(this);
+		//this.getMenuItems = this.getMenuItems.bind(this);
 
 		this.state = {
 			showMenu: false,
@@ -147,7 +147,6 @@ export default class Header extends React.Component {
 							href="#"
 							onClick={this.onClickShowMenu}
 						>
-							<span className="navbarMenu"> Meny </span>
 							<span className="btnMenu">
 								<i className="fa fa-bars" />
 							</span>
