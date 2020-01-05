@@ -1,10 +1,17 @@
 body {
-  margin: 0;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
-  background-color: #d8d8d8;
+	margin: 0;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 18px;
+	background-image: url("https://jooinn.com/images/grey-13.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+a {
+  color: rgba(45, 53, 59, 1);
+  text-decoration: none;
 }
 
 code {

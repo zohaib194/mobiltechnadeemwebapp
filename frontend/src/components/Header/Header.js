@@ -81,12 +81,11 @@ export default class Header extends React.Component {
 			this.setState({
 				showMenu: true
 			});
-			var elem = document.getElementById('menu');
 		}
 	}
 
 	getMenuItems() {
-		let transitionEffect = 'all 2s ease-in-out';
+		let transitionEffect = 'all .4s ease-in-out';
 		let divHeight;
 
 		if(this.state.showMenu){
@@ -102,44 +101,44 @@ export default class Header extends React.Component {
 		return (
 
 			<div id="menu" style={divStyle}>
-				<div id="navbarBottomElement">
+				<div id="navbarBottomElement" className="navbarBrands">
 					<a className="navbarBrands" href="/brands">
 						<b>Merker</b>
 					</a>
 
-					<div id="repair">
+					<div id="brands">
 						<ul className="unordList">
 							<li>
-								<a id="navbarBottomElement" href="/repair/apple"> Apple </a>
+								<a href="/brands/apple"> Apple </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/repair/samsung"> Samsung </a>
+								<a href="/brands/samsung"> Samsung </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/repair/huwaei"> Huwaei </a>
+								<a href="/brands/huwaei"> Huwaei </a>
 							</li>
 						</ul>
 					</div>
 				</div>
 
 				<div id="navbarBottomElement" className="navbarSpareParts">
-					<a id="navbarBottomElement" className="navbarSpareParts" href="/spareparts">
+					<a className="navbarSpareParts" href="/spareparts">
 						<b>Reservedeler</b>
 					</a>
 
 					<div id="spareParts">
 						<ul className="unordList">
 							<li>
-								<a id="navbarBottomElement" href="/spareparts/lcd"> LCD skjerm </a>
+								<a href="/spareparts/lcd"> LCD skjerm </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/spareparts/backglass"> Bakglass </a>
+								<a href="/spareparts/backglass"> Bakglass </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/spareparts/cameras"> Front/Back kamera </a>
+								<a href="/spareparts/cameras"> Front/Back kamera </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/spareparts/battery"> Batteri </a>
+								<a href="/spareparts/battery"> Batteri </a>
 							</li>
 
 						</ul>
@@ -147,23 +146,23 @@ export default class Header extends React.Component {
 				</div>
 
 				<div id="navbarBottomElement" className="navbarAccessories">
-					<a id="navbarBottomElement" className="navbarAccessories" href="/accessories">
+					<a className="navbarAccessories" href="/accessories">
 						<b>Tilbehør</b>
 					</a>
 
 					<div id="accessories">
 						<ul className="unordList">
 							<li>
-								<a id="navbarBottomElement" href="/accessories/screenprotector"> Skjermbeskytter</a>
+								<a href="/accessories/screenprotector"> Skjermbeskytter</a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/accessories/charger"> Lader </a>
+								<a href="/accessories/charger"> Lader </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/accessories/cabels"> USB kabler </a>
+								<a href="/accessories/cabels"> USB kabler </a>
 							</li>
 							<li>
-								<a id="navbarBottomElement" href="/accessories/earbuds"> Ørepropper </a>
+								<a href="/accessories/earbuds"> Ørepropper </a>
 							</li>
 						</ul>
 					</div>
@@ -173,22 +172,22 @@ export default class Header extends React.Component {
 
 				<div id="navbarBottomElement" className="navbarAccessories">
 
-					<a id="navbarBottomElement" className="navbarContact" href="/help">
+					<a className="navbarContact" href="/help">
 						<b>Hjelp</b>
 					</a>
 
 					<ul className="unordList">
 						<li>
-							<a id="navbarBottomElement" href="/help/billing"> Faktura </a>
+							<a href="/help/billing"> Faktura </a>
 						</li>
 						<li>
-							<a id="navbarBottomElement" href="/help/customerservice"> Kundeservice </a>
+							<a href="/help/customerservice"> Kundeservice </a>
 						</li>
 						<li>
-							<a id="navbarBottomElement" href="/help/gdpr"> GDPR </a>
+							<a href="/help/gdpr"> GDPR </a>
 						</li>
 						<li>
-							<a id="navbarBottomElement" href="/help/contact"> Kontakt oss </a>
+							<a href="/help/contact"> Kontakt oss </a>
 						</li>
 					</ul>
 				</div>
@@ -201,10 +200,8 @@ export default class Header extends React.Component {
 			var searchForm = this.getSearchFieldForm();
 		}
 
-		if (this.state.showMenu) {
-		}
+		var menu = this.getMenuItems();
 
-			var menu = this.getMenuItems();
 		return (
 			<div>
 				<div className="navbar">
