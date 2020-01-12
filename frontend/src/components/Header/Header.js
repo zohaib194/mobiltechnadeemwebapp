@@ -11,7 +11,7 @@ export default class Header extends React.Component {
 		this.onClickShowSearchField = this.onClickShowSearchField.bind(this);
 		this.getSearchFieldForm = this.getSearchFieldForm.bind(this);
 		this.onClickShowMenu = this.onClickShowMenu.bind(this);
-		this.getMenuItems = this.getMenuItems.bind(this);
+		//this.getMenuItems = this.getMenuItems.bind(this);
 
 		this.state = {
 			showMenu: false,
@@ -47,11 +47,16 @@ export default class Header extends React.Component {
 						{searchForm}
 					</div>
 					<div id="navbarSides" className="navbarMid">
-
-
 						<p className="home-title">
-							<span><b> Mobil <i className="fa fa-mobile-phone" /> Tech </b></span>
-							<span><b> Nadeem </b> </span>
+							<span>
+								<b>
+									{" "}
+									Mobil <i className="fa fa-mobile-phone" /> Tech{" "}
+								</b>
+							</span>
+							<span>
+								<b> Nadeem </b>{" "}
+							</span>
 						</p>
 					</div>
 					<div id="navbarSides" className="navbarRight">
@@ -78,7 +83,6 @@ export default class Header extends React.Component {
 				</div>
 				<div id="navbarSides">{menu}</div>
 			</div>
-
 		);
 	}
 
@@ -115,7 +119,6 @@ export default class Header extends React.Component {
 			this.setState({
 				showMenu: false
 			});
-
 		} else {
 			menuButton.className = "fa fa-bars inactive";
 			closeButton.className = "fa fa-close active";
@@ -157,21 +160,20 @@ export default class Header extends React.Component {
 	}
 
 	getMenuItems() {
-		let transitionEffect = 'all .4s ease-in-out';
+		let transitionEffect = "all .4s ease-in-out";
 		let divHeight;
 
-		if(this.state.showMenu){
-			divHeight = '10em';
+		if (this.state.showMenu) {
+			divHeight = "11em";
 		} else {
-			divHeight = '0em';
+			divHeight = "0em";
 		}
 		const divStyle = {
-		  transition: transitionEffect,
-		  height: divHeight,
-		  overflow: 'hidden',
+			transition: transitionEffect,
+			height: divHeight,
+			overflow: "hidden"
 		};
 		return (
-
 			<div id="menu" style={divStyle}>
 				<div id="navbarBottomElement" className="navbarBrands">
 					<a className="navbarBrands" href="/brands">
@@ -212,7 +214,6 @@ export default class Header extends React.Component {
 							<li>
 								<a href="/spareparts/battery"> Batteri </a>
 							</li>
-
 						</ul>
 					</div>
 				</div>
@@ -238,12 +239,9 @@ export default class Header extends React.Component {
 							</li>
 						</ul>
 					</div>
-
 				</div>
 
-
 				<div id="navbarBottomElement" className="navbarAccessories">
-
 					<a className="navbarContact" href="/help">
 						<b>Hjelp</b>
 					</a>

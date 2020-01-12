@@ -71,10 +71,10 @@
 	box-shadow: 1px 1px;
 	justify-content: center;
 	width: 100%;
-	height: 10em;
 	background: rgba(216, 216, 216, 0.9);
 	grid-template-columns: repeat(4, 0.09fr);
 	grid-template-rows: 1fr;
+	grid-column-gap: 168px;
 	-webkit-animation-name: menuMovement; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
 	animation-name: menuMovement;
@@ -82,15 +82,15 @@
 	z-index: 99;
 }
 
-.fa.fa-bars.inactive{
+.fa.fa-bars.inactive {
 	display: none;
 }
 
-.fa.fa-close.inactive{
+.fa.fa-close.inactive {
 	display: none;
 }
 
-.fa.fa-close.active{
+.fa.fa-close.active {
 	display: "inline-block";
 }
 
@@ -98,7 +98,6 @@
 	list-style-type: none;
 	padding: 0;
 }
-
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes searchMovement {
@@ -148,7 +147,6 @@
 	}
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 500px) {
 	#navbarSides #menu {
@@ -159,22 +157,23 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	a#navbarRightElement.Menu {
-    	margin-left: -5px;
+		margin-left: -5px;
 	}
 
 	input#navbarLeftElement.navbarSearchField {
 		margin-left: -10px;
 	}
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	form.SearchForm, a#navbarLeftElement.Search {
+	form.SearchForm,
+	a#navbarLeftElement.Search {
 		display: none;
 	}
 
-	span.navbarMenu, span.navbarProfile{
+	span.navbarMenu,
+	span.navbarProfile {
 		display: none;
 	}
 
@@ -182,7 +181,7 @@
 		margin-left: -0.4em;
 	}
 
-	#navbarSides #menu{
+	#navbarSides #menu {
 		width: 100%;
 	}
 }
@@ -190,68 +189,74 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 	a#navbarLeftElement.Close {
-    	display: none;
+		display: none;
 	}
 }
-
-
 
 /**
  * REF : https://codepen.io/sedran/pen/GYPevV;
  */
-:root{
-    --bg-color: #d8d8d8;
+:root {
+	--bg-color: #d8d8d8;
 }
 
 /* title styles */
-.home-title span{
-    position: relative;
-    overflow: hidden;
-    display: block;
-    line-height: 1.2;
-    text-align: center;
+.home-title span {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	line-height: 1.2;
+	text-align: center;
 }
 
-.home-title span::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #2dace3;
-    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
-    transform: translateX(-101%);
+.home-title span::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #2dace3;
+	animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+	transform: translateX(-101%);
 }
 
-.home-title span::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
-    transform: translateX(0);
+.home-title span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--bg-color);
+	animation: a-ltr-before 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+	transform: translateX(0);
 }
 
 .home-title span:nth-of-type(1)::before,
-.home-title span:nth-of-type(1)::after{
-    animation-delay: 1s;
+.home-title span:nth-of-type(1)::after {
+	animation-delay: 1s;
 }
 
 .home-title span:nth-of-type(2)::before,
-.home-title span:nth-of-type(2)::after{
-    animation-delay: 1.5s;
+.home-title span:nth-of-type(2)::after {
+	animation-delay: 1.5s;
 }
 
-@keyframes a-ltr-after{
-    0% {transform: translateX(-100%)}
-    100% {transform: translateX(101%)}
+@keyframes a-ltr-after {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(101%);
+	}
 }
 
-@keyframes a-ltr-before{
-    0% {transform: translateX(0)}
-    100% {transform: translateX(200%)}
+@keyframes a-ltr-before {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(200%);
+	}
 }

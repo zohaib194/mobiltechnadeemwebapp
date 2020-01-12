@@ -1,20 +1,12 @@
 body {
 	margin: 0;
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 18px;
-	background-image: url("https://jooinn.com/images/grey-13.png");
-	background-repeat:no-repeat;
-	background-size:cover;
-}
 
-a {
-  color: rgba(45, 53, 59, 1);
-  text-decoration: none;
+	font-size: 18px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
