@@ -1,0 +1,52 @@
+.app2-Grid {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 0.2fr 0.7fr 0.3fr;
+
+	grid-template-areas: "header" "slidshow" "news";
+	grid-row-gap: 10px;
+}
+.navBar {
+	grid-area: header;
+	background: salmon;
+	height: 5em;
+}
+
+.slidshow {
+	grid-area: slidshow;
+	background-color: pink;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 15em;
+}
+
+.news {
+	grid-area: news;
+	background-color: blue;
+	width: 100%;
+	margin: 0 auto;
+	height: 10em;
+}
+.GoodsGrid {
+	display: grid;
+	grid-template-columns: 1.5fr 1.5fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "newGoods comingsoon";
+}
+.newGoods {
+	grid-area: newGoods;
+	background-color: blueviolet;
+	height: 10em;
+}
+.comingsoon {
+	grid-column: comingsoon;
+	background-color: brown;
+	height: 10em;
+}
+
+.footer {
+	grid-area: footer;
+	height: 10em;
+	background-color: cyan;
+}
