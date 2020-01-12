@@ -1,7 +1,10 @@
 import React from "react";
-import "../Header/Header.css";
+import "components/Header/Header.css";
 
 export default class Header extends React.Component {
+	////////////////////////////////
+	/////// Lifecycle Methods //////
+	////////////////////////////////
 	constructor(props) {
 		super(props);
 
@@ -16,6 +19,72 @@ export default class Header extends React.Component {
 		};
 	}
 
+	render() {
+		if (this.state.showSearch) {
+			var searchForm = this.getSearchFieldForm();
+		}
+
+		var menu = this.getMenuItems();
+
+		return (
+			<div>
+				<div className="navbar">
+					<div id="navbarSides" className="navbarLeft">
+						<a
+							id="navbarLeftElement"
+							className="Search"
+							href="#"
+							onClick={this.onClickShowSearchField}
+						>
+							<span id="navbarSearch" className="navbarSearch">
+								{" "}
+								Søk{" "}
+							</span>
+							<span className="navbarSearchIcon">
+								<i className="fa fa-search" />
+							</span>
+						</a>
+						{searchForm}
+					</div>
+					<div id="navbarSides" className="navbarMid">
+
+
+						<p className="home-title">
+							<span><b> Mobil <i className="fa fa-mobile-phone" /> Tech </b></span>
+							<span><b> Nadeem </b> </span>
+						</p>
+					</div>
+					<div id="navbarSides" className="navbarRight">
+						<a
+							id="navbarRightElement"
+							className="Menu"
+							href="#"
+							onClick={this.onClickShowMenu}
+						>
+							<span className="navbarMenu"> Meny </span>
+							<span className="btnMenu">
+								<i className="fa fa-bars active" />
+								<i className="fa fa-close inactive" />
+							</span>
+						</a>
+
+						<a id="navbarRightElement" className="Profile" href="/">
+							<span className="navbarProfile"> Min profil </span>
+							<span className="btnMenu">
+								<i className="fa fa-user-o" />
+							</span>
+						</a>
+					</div>
+				</div>
+				<div id="navbarSides">{menu}</div>
+			</div>
+
+		);
+	}
+
+	////////////////////////////////
+	//////// Event Methods /////////
+	////////////////////////////////
 	onClickShowSearchField() {
 		var searchButton = document.getElementsByClassName("Search")[0];
 
@@ -36,6 +105,29 @@ export default class Header extends React.Component {
 		}
 	}
 
+	onClickShowMenu() {
+		var menuButton = document.getElementsByClassName("fa fa-bars")[0];
+		var closeButton = document.getElementsByClassName("fa fa-close")[0];
+
+		if (this.state.showMenu) {
+			menuButton.className = "fa fa-bars active";
+			closeButton.className = "fa fa-close inactive";
+			this.setState({
+				showMenu: false
+			});
+
+		} else {
+			menuButton.className = "fa fa-bars inactive";
+			closeButton.className = "fa fa-close active";
+			this.setState({
+				showMenu: true
+			});
+		}
+	}
+
+	////////////////////////////////
+	/////// Internal Methods ///////
+	////////////////////////////////
 	getSearchFieldForm() {
 		return (
 			<form className="SearchForm" action="">
@@ -62,26 +154,6 @@ export default class Header extends React.Component {
 				</a>
 			</form>
 		);
-	}
-
-	onClickShowMenu() {
-		var menuButton = document.getElementsByClassName("fa fa-bars")[0];
-		var closeButton = document.getElementsByClassName("fa fa-close")[0];
-
-		if (this.state.showMenu) {
-			menuButton.className = "fa fa-bars active";
-			closeButton.className = "fa fa-close inactive";
-			this.setState({
-				showMenu: false
-			});
-
-		} else {
-			menuButton.className = "fa fa-bars inactive";
-			closeButton.className = "fa fa-close active";
-			this.setState({
-				showMenu: true
-			});
-		}
 	}
 
 	getMenuItems() {
@@ -192,73 +264,6 @@ export default class Header extends React.Component {
 					</ul>
 				</div>
 			</div>
-		);
-	}
-
-	render() {
-		if (this.state.showSearch) {
-			var searchForm = this.getSearchFieldForm();
-		}
-
-		var menu = this.getMenuItems();
-
-		return (
-			<div>
-				<div className="navbar">
-					<div id="navbarSides" className="navbarLeft">
-						<a
-							id="navbarLeftElement"
-							className="Search"
-							href="#"
-							onClick={this.onClickShowSearchField}
-						>
-							<span id="navbarSearch" className="navbarSearch">
-								{" "}
-								Søk{" "}
-							</span>
-							<span className="navbarSearchIcon">
-								<i className="fa fa-search" />
-							</span>
-						</a>
-						{searchForm}
-					</div>
-					<div id="navbarSides" className="navbarMid">
-
-
-						<p className="home-title">
-							<span><b> Mobil <i className="fa fa-mobile-phone" /> Tech </b></span>
-							<span><b> Nadeem </b> </span>
-						</p>
-					</div>
-					<div id="navbarSides" className="navbarRight">
-						<a
-							id="navbarRightElement"
-							className="Menu"
-							href="#"
-							onClick={this.onClickShowMenu}
-						>
-							<span className="navbarMenu"> Meny </span>
-							<span className="btnMenu">
-								<i className="fa fa-bars active" />
-								<i className="fa fa-close inactive" />
-							</span>
-						</a>
-
-						<a id="navbarRightElement" className="Profile" href="/">
-							<span className="navbarProfile"> Min profil </span>
-							<span className="btnMenu">
-								<i className="fa fa-user-o" />
-							</span>
-						</a>
-					</div>
-				</div>
-				<div id="navbarSides">{menu}</div>
-				<img
-							src="https://s14415.pcdn.co/wp-content/resize/uploads/brandwatch/troll.jpg__w469"
-							alt="Mobil Tech"
-						/>
-			</div>
-
 		);
 	}
 }
