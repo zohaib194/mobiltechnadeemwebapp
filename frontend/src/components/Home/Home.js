@@ -30,11 +30,23 @@ export default class Home extends React.Component {
 		var slideShow = this.getSlideShowImages();
 		var slideShowDots = this.getSlideShowDots();
 		return (
-			<div>
-				<Header />
+			<div className="homePage-Grid">
+				<div className="navBar">{/* header goes here */} <Header /></div>
+				<div className="slidshow">{/* slideshow goes here */slideShow} {slideShowDots} {/* TODO: dots aren't showing up */} </div>
+				<div className="news">{/* news goes here */}</div>
+				<div className="GoodsGrid">
+					<div className="newGoods">{/* newGoods goes here */}</div>
+					<div className="comingsoon">{/* commingsoon goes here */}</div>
+				</div>
+				<div className="Footer">
+					<div className="footer">{/* footer goes here */}</div>
+				</div>
+			</div>
+			/*<div>
+				
 				{slideShow}
 				{slideShowDots}
-			</div>
+			</div>*/
 		);
 	}
 	////////////////////////////////
