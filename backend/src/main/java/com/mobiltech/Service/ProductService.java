@@ -14,7 +14,7 @@ import java.util.Collection;
 public class ProductService {
 
     @Autowired
-    @Qualifier("mongo")
+    @Qualifier("fakeData")
     private ProductDao productDao;
 
     public Collection<Product> getAllProducts(){

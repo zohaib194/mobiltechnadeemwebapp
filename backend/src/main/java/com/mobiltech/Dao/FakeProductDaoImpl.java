@@ -1,6 +1,7 @@
 package com.mobiltech.Dao;
 
 import com.mobiltech.Entity.Product;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Repository
+@Qualifier("fakeData")
 public class FakeProductDaoImpl implements ProductDao {
     private static Map<Integer, Product> products;
 
