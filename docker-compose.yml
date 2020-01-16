@@ -1,0 +1,47 @@
+version: '3'
+services:
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        website_files: "."
+    ports:
+      - "3001:3000"
+    depends_on:
+      - api
+    environment:
+      - REACT_APP_PUBLIC_URL=public
+      - NODE_PATH=src/
+      - NODE_ENV=development
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 5016:5016
+    networks:
+      - api-db
+    depends_on:
+      - mariadb
+    environment:
+      - PORT=5016
+
+  mariadb:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  adminer: 
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  DB-storage:
+
+networks:
+  api-db:

@@ -23,7 +23,7 @@ public class ProductController {
     }
 
     @RequestMapping(value="/{id}", method = RequestMethod.GET)
-    public Product getStudentById(@PathVariable("id") int id){
+    public Product getProductById(@PathVariable("id") int id){
         return productService.getProductById(id);
     }
 

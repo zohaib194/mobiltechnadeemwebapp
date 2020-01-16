@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Repository
-@Qualifier("mongo")
+@Qualifier("mySql")
 public class MongoProdcutDaoImpl implements ProductDao {
     @Override
     public Collection<Product> getAllProducts() {
