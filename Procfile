@@ -1,2 +1,1 @@
-npm install --silent
-npm start
+web: npm install --silent && npm start
