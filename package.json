@@ -1,0 +1,21 @@
+{
+  "name": "mobiltechnadeemwebapp",
+  "version": "1.0.0",
+  "description": "## Front-end - Navigate to root directory of the project and run the following command: \t- ``` npm install ``` - Navigate to the root/frontend directory and run the following command: \t- ``` npm install ``` \t- ``` npm start ``` - Open a browser and navigate to ``` http://localhost:3000/ ```.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "cd frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zohaib194/mobiltechnadeemwebapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zohaib194/mobiltechnadeemwebapp/issues"
+  },
+  "homepage": "https://github.com/zohaib194/mobiltechnadeemwebapp#readme"
+}
