@@ -1,1 +1,1 @@
-web: npm install --silent && npm start
+web: cd ./frontend && npm install --silent && npm start
