@@ -1,12 +1,9 @@
 version: '3'
 services:
-
   web:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-      args:
-        website_files: "."
     ports:
       - "3001:3000"
     depends_on:
@@ -21,8 +18,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5016:5016
-    networks:
-      - api-db
     depends_on:
       - mariadb
     environment:
@@ -40,8 +35,3 @@ services:
     ports:
       - 8080:8080
 
-volumes:
-  DB-storage:
-
-networks:
-  api-db:
