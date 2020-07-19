@@ -1,5 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <html>
 
 <head>
@@ -7,7 +5,7 @@
 </head>
 
 <body>
-Welcome <c:out value="${name}"/> this user has been created.
+Hello World!!
 </body>
 
 </html>
