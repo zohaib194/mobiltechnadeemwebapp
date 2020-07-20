@@ -1,0 +1,32 @@
+.Footer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #172635;
+}
+
+.FooterGridContainer {
+    width: 35%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr;
+    gap: 1px 1px;
+    color: gainsboro;
+    text-align: center;
+}
+
+.FooterGridContainer-FlexColumn-First {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.FooterGridContainer-FlexColumn-Second {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}
+
+.FooterGridContainer-FlexColumn-Third {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+}

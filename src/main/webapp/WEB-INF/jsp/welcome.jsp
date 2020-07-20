@@ -1,11 +1,15 @@
+<%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
+    <head>
+        <title>First Web Application</title>
+        <link href="<jstl:url value='/resources/static/css/footer.css '/>" rel="stylesheet" />
+    </head>
 
-<head>
-    <title>First Web Application</title>
-</head>
+    <body>
+        Hello World!!
 
-<body>
-Hello World!!
-</body>
+        <jsp:include page="includes/footer.jsp"/>
+    </body>
 
 </html>
