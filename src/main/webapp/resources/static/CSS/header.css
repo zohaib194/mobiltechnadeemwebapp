@@ -1,0 +1,51 @@
+.Header{
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    background-color: #172635;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.Logo{
+    width: 270px;
+    cursor: pointer;
+}
+.NavContent{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-self: end;
+    color: gainsboro;
+    font-size: large;
+}
+#aboutUsInNav{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+p:hover{
+    color: white;
+    text-decoration: underline;
+}
+.fa-users:hover{
+    color: white;
+}
+.fa-user:hover{
+    color: white;
+}
+.UserRegisterAndLogin{
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   align-self: end;
+   height: max-content;
+   margin: 0 auto;
+   padding: 1rem;
+   color: gainsboro;
+   cursor: pointer;
+}
+
+
