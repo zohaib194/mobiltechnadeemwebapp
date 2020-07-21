@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="<jstl:url value='/resources/static/JS/includes/header.js' />"></script>
 </head>
 
 <body>

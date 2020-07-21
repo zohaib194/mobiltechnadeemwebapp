@@ -60,6 +60,29 @@
     font-weight: 700;
 }
 
+.dropright {
+  position: relative;
+}
+
+.dropright .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.dropdown-menu {
+    top: 25% !important;
+    left: 52% !important;
+    min-width: 12rem !important;
+}
+
+.dropright .dropdown-menu {
+    margin-top: -8px;
+    margin-left: 5rem;
+}
+.btn{
+    width: 100% !important;
+}
 
 
 

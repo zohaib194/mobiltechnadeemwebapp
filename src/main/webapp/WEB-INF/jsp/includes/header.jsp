@@ -6,7 +6,55 @@
         <img src="<jstl:url value='/resources/static/images/finallogoWhite.png'/>" alt="It is a compnay logo" class="Logo">
     </div>
     <div class="NavContent">
-        <p id="navLinkProducts">PRODUCTS</p>
+      <!--
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle"
+               type="button"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false"
+               id="navLinkProducts">PRODUCTS</a>
+            <div class="dropdown-menu" aria-labelledby="navLinkProducts">
+                <div class="btn-group dropright">
+                    <button
+
+                            type="button"
+                            class="btn btn-secondary dropdown-toggle"
+                            data-toggle="dropright"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                        Dropright
+                    </button>
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" >Another action</a>
+                        <a class="dropdown-item" >Something else here</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    -->
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dropdown link</a>
+        <div class="dropdown-menu">
+            <div class="dropright">
+                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Spare parts &#8250;</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropright">
+                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Spare parts &#8250;</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+
         <p id="navLinkAboutUs">ABOUT US</p>
         <p id="navLinkContact">CONTACT</p>
     </div>
