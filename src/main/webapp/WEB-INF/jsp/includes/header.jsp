@@ -11,9 +11,11 @@
         <p>CONTACT</p>
     </div>
     <div class="UserRegisterAndLogin">
-        <i class="fa fa-user" style="font-size:36px; padding-right:1rem"></i>
-        <i class="fa fa-users" style="font-size:36px" data-toggle="modal" data-target="#exampleModalCenter" id="RegButton"></i>
+        <i class="fa fa-user" style="font-size:36px; padding-right:1rem" data-toggle="modal" data-target="#exampleModalCenterLogin"></i>
+        <i class="fa fa-users" style="font-size:36px" data-toggle="modal" data-target="#exampleModalCenter"></i>
     </div>
     <jsp:include page="registerUser.jsp"/>
+    <jsp:include page="login.jsp" />
+
 
 </div>

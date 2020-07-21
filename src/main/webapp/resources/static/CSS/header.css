@@ -50,11 +50,13 @@ p:hover{
 
 .modal-title{
     display: contents;
-    font
+    font-weight: 700;
 }
 
 #registerUser{
     margin: 0;
 }
+
+
 
 
