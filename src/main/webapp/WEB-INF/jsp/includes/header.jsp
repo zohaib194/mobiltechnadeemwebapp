@@ -6,9 +6,9 @@
         <img src="<jstl:url value='/resources/static/images/finallogoWhite.png'/>" alt="It is a compnay logo" class="Logo">
     </div>
     <div class="NavContent">
-        <p>PRODUCTS</p>
-        <p id="aboutUsInNav">ABOUT US</p>
-        <p>CONTACT</p>
+        <p id="navLinkProducts">PRODUCTS</p>
+        <p id="navLinkAboutUs">ABOUT US</p>
+        <p id="navLinkContact">CONTACT</p>
     </div>
     <div class="UserRegisterAndLogin">
         <i class="fa fa-user" style="font-size:36px; padding-right:1rem" data-toggle="modal" data-target="#exampleModalCenterLogin"></i>

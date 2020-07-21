@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
+    margin-left: 10rem;
 }
 .Logo{
     width: 270px;
@@ -16,17 +17,23 @@
 }
 .NavContent{
     display: flex;
-    justify-content: flex-end;
-    align-content: center;
     align-self: end;
     color: gainsboro;
     font-size: large;
 }
-#aboutUsInNav{
+#navLinkAboutUs{
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
-p:hover{
+#navLinkProducts:hover{
+    color: white;
+    text-decoration: underline;
+}
+#navLinkAboutUs:hover{
+    color: white;
+    text-decoration: underline;
+}
+#navLinkContact:hover{
     color: white;
     text-decoration: underline;
 }
@@ -51,10 +58,6 @@ p:hover{
 .modal-title{
     display: contents;
     font-weight: 700;
-}
-
-#registerUser{
-    margin: 0;
 }
 
 

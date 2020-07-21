@@ -28,9 +28,13 @@
                         <label for="exampleInputConfirmPassword1">Confirm Password</label>
                         <input type="password" name="confirmPassword"  class="form-control" id="exampleInputConfirmPassword1" placeholder="ConfirmPassword">
                     </div>
+
                     <div class="modal-footer">
+                        <p id="signUp" class="font-small grey-text d-flex justify-content-end">Already have an account? <a class="blue-text ml-1" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenterLogin">
+                            Sign in here</a></p>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <input type="submit" class="btn btn-primary" id="submitRegisterForm"/>
+
                     </div>
                 </form>
             </div>
