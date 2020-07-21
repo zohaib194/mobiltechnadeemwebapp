@@ -3,7 +3,7 @@
 
 <div class="Header">
     <div id="logo">
-        <img src="<jstl:url value='/resources/static/images/logo.png'/>" alt="It is a compnay logo" class="Logo">
+        <img src="<jstl:url value='/resources/static/images/finallogoWhite.png'/>" alt="It is a compnay logo" class="Logo">
     </div>
     <div class="NavContent">
         <p>PRODUCTS</p>
