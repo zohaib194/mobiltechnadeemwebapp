@@ -35,18 +35,18 @@
             </div>
         </div>
     -->
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dropdown link</a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">PRODUCTS</a>
         <div class="dropdown-menu">
             <div class="dropright">
-                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Spare parts &#8250;</button>
+                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown" id="dropDownBtn">Spare parts &#8250;</button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
+                    <a class="dropdown-item" href="#">Apple</a>
+                    <a class="dropdown-item" href="#">Samsung</a>
+                    <a class="dropdown-item" href="#">Hauwei</a>
                 </div>
             </div>
             <div class="dropright">
-                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Spare parts &#8250;</button>
+                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown" id="dropDownSecondBtn">Accessories &#8250;</button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Link 1</a>
                     <a class="dropdown-item" href="#">Link 2</a>

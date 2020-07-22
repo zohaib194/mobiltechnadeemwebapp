@@ -21,11 +21,14 @@
     color: gainsboro;
     font-size: large;
 }
-#navLinkAboutUs{
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+#navbardrop{
+    color: gainsboro;
 }
-#navLinkProducts:hover{
+#navLinkAboutUs{
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+}
+#navbardrop:hover{
     color: white;
     text-decoration: underline;
 }
@@ -71,17 +74,59 @@
 }
 
 .dropdown-menu {
-    top: 25% !important;
+    padding: 0px !important;
+    top: 8.88rem !important;
     left: 52% !important;
     min-width: 12rem !important;
 }
 
 .dropright .dropdown-menu {
+    top: 8px !important;
     margin-top: -8px;
-    margin-left: 5rem;
+    margin-left: 5.7rem;
 }
-.btn{
+#dropDownBtn{
+    color: black;
+    padding: 8px !important;
     width: 100% !important;
+    background-color: white;
+    border-radius: 0px !important;
+}
+
+
+#dropDownBtn.focus, #dropDownBtn:focus, #dropDownBtn:hover{
+    background-color: lightgrey;
+    color: #172635 !important;
+    display: block;
+    outline: none !important;
+}
+
+#dropDownSecondBtn{
+    color: black;
+    padding: 8px !important;
+    width: 100% !important;
+    background-color: white;
+    border-radius: 0px !important;
+}
+
+#dropDownSecondBtn.focus, #dropDownSecondBtn:focus, #dropDownSecondBtn:hover{
+    background-color: lightgrey;
+    color: #172635 !important;
+    display: block;
+    outline: none !important;
+}
+
+.dropdown-item{
+    display:block;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dropdown-item:hover{
+     background-color: lightgrey;
 }
 
 
