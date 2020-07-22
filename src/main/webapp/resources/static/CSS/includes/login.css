@@ -1,0 +1,22 @@
+#login{
+    margin: 0;
+}
+
+#checkLabel{
+    font-weight: 100;
+    color: gray;
+    font-style: italic;
+}
+
+input[type=checkbox]:checked + label {
+  color: black !important;
+  font-style: normal !important;
+}
+
+#modalFooterLogin{
+    display: grid;
+}
+
+#signIn{
+    cursor: pointer;
+}
