@@ -18,7 +18,6 @@
 <body>
 <jsp:include page="includes/header.jsp"/>
 Hello World!!
-
 </body>
 
 </html>
