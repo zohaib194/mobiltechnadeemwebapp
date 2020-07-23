@@ -31,7 +31,7 @@
 .FooterGridContainer-FlexColumn-Third {
     display: flex;
     flex-direction: column;
-    margin-top: 5.6rem;
+    margin-top: 7.7rem;
 }
 
 .FooterGridContainer a {
@@ -83,5 +83,15 @@
 .FooterSocialMediaIcons {
     margin: 0 auto;
     width: 50vw;
-    margin-bottom: 5.5rem;
+}
+
+.FooterSocialMediaIcons a {
+    margin-bottom: 0.5rem;
+}
+
+.FooterImg {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    width: 50vw;
 }

@@ -1,3 +1,5 @@
+<%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <div class="Footer">
 
     <div class="FooterGridContainer">
@@ -24,9 +26,11 @@
         </div>
 
     </div>
-
-    <div class="FooterSocialMediaIcons">
-        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <div class="FooterImg">
+        <img src="<jstl:url value='/resources/static/images/finallogoWhite.png'/>" alt="It is a compnay logo" class="Logo"/>
+        <div class="FooterSocialMediaIcons">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        </div>
     </div>
     <div class="FooterSeparator"> </div>
     <p id="copyright">&copy; 2018 - 2020 DEINSAIN<p>
