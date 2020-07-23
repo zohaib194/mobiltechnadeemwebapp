@@ -3,3 +3,8 @@ body {
    padding: 0;
    font-family: effra, sans-serif;
 }
+
+.NewProducts h2 {
+    justify-content: center;
+    display: flex;
+}
