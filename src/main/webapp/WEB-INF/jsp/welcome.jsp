@@ -20,15 +20,26 @@
     <body>
         <jsp:include page="includes/header.jsp"/>
 
-        <div class="NewProducts">
+        <div class="NewProducts-Section">
             <h2> ${Title} </h2>
-            <jstl:forEach var="prod" items="${Products}">
-                <jstl:out value="${prod.name}"/>
-                <div class="Prod">
-                    <img src="${prod.imageURL}" alt="product">
-                </div>
-            </jstl:forEach>
+            <div class="NewProducts-Section-Products">
 
+                <jstl:forEach var="prod" items="${Products}">
+                    <div class="NewProducts-Section-Products-Product">
+                        <div class="NewProducts-Section-Products-Product-Title-Image-Container">
+                            <img src="${prod.imageURL}" alt="product" width=250 height=250>
+                            <h5> ${prod.name} </h5>
+                        </div>
+                        <svg width="250" height="42" viewBox="0 0 250 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g style="mix-blend-mode:darken">
+                                <rect width="248" height="32" rx="1" fill="#DDDDDD"/>
+                            </g>
+                            <path d="M125.5 41.9844L115.541 31.4961H135.459L125.5 41.9844Z" fill="#DDDDDD"/>
+                        </svg>
+
+                    </div>
+                </jstl:forEach>
+            </div>
         </div>
         <jsp:include page="includes/footer.jsp"/>
     </body>
